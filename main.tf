@@ -1,9 +1,8 @@
 //--------------------------------------------------------------------
 // Modules
-module "vpc" {
-  source  = "app.terraform.io/bleehashiorg/vpc/aws"
-  version = "0.0.3"
+module "ec2" {
+  source  = "app.terraform.io/bleehashiorg/ec2/aws"
+  version = "0.0.1"
 
-  owner = "blee"
-  ttl = 1
+  key_name = "abc"
 }
